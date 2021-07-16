@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [QuotationApi]    Script Date: 07-15-2021 16:25:46 ******/
+/****** Object:  Database [QuotationApi]    Script Date: 07-16-2021 16:38:31 ******/
 CREATE DATABASE [QuotationApi]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -82,7 +82,7 @@ ALTER DATABASE [QuotationApi] SET QUERY_STORE = OFF
 GO
 USE [QuotationApi]
 GO
-/****** Object:  UserDefinedTableType [dbo].[UT_Quotation]    Script Date: 07-15-2021 16:25:46 ******/
+/****** Object:  UserDefinedTableType [dbo].[UT_Quotation]    Script Date: 07-16-2021 16:38:31 ******/
 CREATE TYPE [dbo].[UT_Quotation] AS TABLE(
 	[QuotationId] [bigint] NULL,
 	[QuotationDate] [nvarchar](500) NULL,
@@ -96,7 +96,7 @@ CREATE TYPE [dbo].[UT_Quotation] AS TABLE(
 	[UserId] [bigint] NULL
 )
 GO
-/****** Object:  UserDefinedTableType [dbo].[UT_QuotationDetail]    Script Date: 07-15-2021 16:25:46 ******/
+/****** Object:  UserDefinedTableType [dbo].[UT_QuotationDetail]    Script Date: 07-16-2021 16:38:31 ******/
 CREATE TYPE [dbo].[UT_QuotationDetail] AS TABLE(
 	[QuotationDetailId] [bigint] NOT NULL,
 	[QuotationId] [bigint] NOT NULL,
@@ -109,7 +109,7 @@ CREATE TYPE [dbo].[UT_QuotationDetail] AS TABLE(
 	[UserId] [bigint] NULL
 )
 GO
-/****** Object:  Table [dbo].[Quotation]    Script Date: 07-15-2021 16:25:46 ******/
+/****** Object:  Table [dbo].[Quotation]    Script Date: 07-16-2021 16:38:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -131,7 +131,7 @@ CREATE TABLE [dbo].[Quotation](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[QuotationDetail]    Script Date: 07-15-2021 16:25:46 ******/
+/****** Object:  Table [dbo].[QuotationDetail]    Script Date: 07-16-2021 16:38:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -152,14 +152,14 @@ CREATE TABLE [dbo].[QuotationDetail](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[User]    Script Date: 07-15-2021 16:25:46 ******/
+/****** Object:  Table [dbo].[User]    Script Date: 07-16-2021 16:38:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[User](
 	[UserId] [bigint] IDENTITY(1,1) NOT NULL,
-	[UserName] [nvarchar](50) NULL,
+	[Name] [nvarchar](50) NULL,
 	[EmailAddress] [nvarchar](500) NULL,
 	[Password] [nvarchar](500) NULL,
 	[IsDeleted] [bit] NULL,
@@ -180,6 +180,8 @@ GO
 INSERT [dbo].[Quotation] ([QuotationId], [QuotationDate], [QuotationNumber], [CustomerName], [CustomerAddress], [TotalAmount], [TotalVat], [TotalIncludingVat], [Status], [UserId]) VALUES (6, CAST(N'2021-04-07T00:00:00.000' AS DateTime), N'QUOTE-0006', N'PickNPay', N'Girish', CAST(2364.00 AS Decimal(18, 2)), CAST(331.00 AS Decimal(18, 2)), CAST(2695.00 AS Decimal(18, 2)), 1, 5)
 GO
 INSERT [dbo].[Quotation] ([QuotationId], [QuotationDate], [QuotationNumber], [CustomerName], [CustomerAddress], [TotalAmount], [TotalVat], [TotalIncludingVat], [Status], [UserId]) VALUES (7, CAST(N'2021-04-07T00:00:00.000' AS DateTime), N'QUOTE-0007', N'Game', N'Girish', CAST(2364.00 AS Decimal(18, 2)), CAST(331.00 AS Decimal(18, 2)), CAST(2695.00 AS Decimal(18, 2)), 1, 6)
+GO
+INSERT [dbo].[Quotation] ([QuotationId], [QuotationDate], [QuotationNumber], [CustomerName], [CustomerAddress], [TotalAmount], [TotalVat], [TotalIncludingVat], [Status], [UserId]) VALUES (10, CAST(N'2021-04-07T00:00:00.000' AS DateTime), N'QUOTE-10', N'Girish', N'Girish', CAST(2364.25 AS Decimal(18, 2)), CAST(331.00 AS Decimal(18, 2)), CAST(2695.25 AS Decimal(18, 2)), 1, 7)
 GO
 SET IDENTITY_INSERT [dbo].[Quotation] OFF
 GO
@@ -205,15 +207,19 @@ INSERT [dbo].[QuotationDetail] ([QuotationDetailId], [QuotationId], [QuotationDe
 GO
 INSERT [dbo].[QuotationDetail] ([QuotationDetailId], [QuotationId], [QuotationDescription], [Quantity], [UnitPrice], [TotalAmount], [TotalVat], [TotalIncludingVat], [UserId]) VALUES (14, 7, N'Sports Items', CAST(15.00 AS Decimal(18, 2)), CAST(150.95 AS Decimal(18, 2)), CAST(2264.25 AS Decimal(18, 2)), CAST(339.64 AS Decimal(18, 2)), CAST(2603.89 AS Decimal(18, 2)), 6)
 GO
+INSERT [dbo].[QuotationDetail] ([QuotationDetailId], [QuotationId], [QuotationDescription], [Quantity], [UnitPrice], [TotalAmount], [TotalVat], [TotalIncludingVat], [UserId]) VALUES (17, 10, N'Girish', CAST(10.00 AS Decimal(18, 2)), CAST(10.00 AS Decimal(18, 2)), CAST(100.00 AS Decimal(18, 2)), CAST(14.00 AS Decimal(18, 2)), CAST(114.00 AS Decimal(18, 2)), 7)
+GO
+INSERT [dbo].[QuotationDetail] ([QuotationDetailId], [QuotationId], [QuotationDescription], [Quantity], [UnitPrice], [TotalAmount], [TotalVat], [TotalIncludingVat], [UserId]) VALUES (18, 10, N'Girish Testing', CAST(15.00 AS Decimal(18, 2)), CAST(150.95 AS Decimal(18, 2)), CAST(2264.25 AS Decimal(18, 2)), CAST(317.00 AS Decimal(18, 2)), CAST(2581.25 AS Decimal(18, 2)), 7)
+GO
 SET IDENTITY_INSERT [dbo].[QuotationDetail] OFF
 GO
 SET IDENTITY_INSERT [dbo].[User] ON 
 GO
-INSERT [dbo].[User] ([UserId], [UserName], [EmailAddress], [Password], [IsDeleted]) VALUES (5, N'Test111', N'Test111@gmail.com', N'Reset@123', 0)
+INSERT [dbo].[User] ([UserId], [Name], [EmailAddress], [Password], [IsDeleted]) VALUES (5, N'Test111', N'Test111@gmail.com', N'Reset@123', 0)
 GO
-INSERT [dbo].[User] ([UserId], [UserName], [EmailAddress], [Password], [IsDeleted]) VALUES (6, N'Team111', N'Team111@gmail.com', N'Reset@123', 0)
+INSERT [dbo].[User] ([UserId], [Name], [EmailAddress], [Password], [IsDeleted]) VALUES (6, N'Team111', N'Team111@gmail.com', N'Reset@123', 0)
 GO
-INSERT [dbo].[User] ([UserId], [UserName], [EmailAddress], [Password], [IsDeleted]) VALUES (7, N'nirenpatel', N'nirenmpatel@gmail.com', N'reset123', 0)
+INSERT [dbo].[User] ([UserId], [Name], [EmailAddress], [Password], [IsDeleted]) VALUES (7, N'nirenpatel', N'nirenmpatel@gmail.com', N'reset123', 0)
 GO
 SET IDENTITY_INSERT [dbo].[User] OFF
 GO
@@ -222,7 +228,7 @@ REFERENCES [dbo].[Quotation] ([QuotationId])
 GO
 ALTER TABLE [dbo].[QuotationDetail] CHECK CONSTRAINT [FK_QuotationDetail_Quotation]
 GO
-/****** Object:  StoredProcedure [dbo].[Authenticate]    Script Date: 07-15-2021 16:25:46 ******/
+/****** Object:  StoredProcedure [dbo].[Authenticate]    Script Date: 07-16-2021 16:38:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -241,7 +247,7 @@ BEGIN
 	Select * from dbo.[User] where EmailAddress = @EmailAddress and [Password] = @Password
 END
 GO
-/****** Object:  StoredProcedure [dbo].[DeleteQuotation]    Script Date: 07-15-2021 16:25:46 ******/
+/****** Object:  StoredProcedure [dbo].[DeleteQuotation]    Script Date: 07-16-2021 16:38:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -284,7 +290,7 @@ BEGIN
 
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[GetQuotation]    Script Date: 07-15-2021 16:25:46 ******/
+/****** Object:  StoredProcedure [dbo].[GetQuotation]    Script Date: 07-16-2021 16:38:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -304,7 +310,7 @@ BEGIN
     Select * from Quotation where (Quotation.QuotationId = @QuotationById Or @QuotationById = 0) and UserId= @UserId
 END
 GO
-/****** Object:  StoredProcedure [dbo].[GetQuotationDetails]    Script Date: 07-15-2021 16:25:46 ******/
+/****** Object:  StoredProcedure [dbo].[GetQuotationDetails]    Script Date: 07-16-2021 16:38:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -324,7 +330,7 @@ BEGIN
     Select * from QuotationDetail where (QuotationDetail.QuotationId = @QuotationById Or @QuotationById = 0) and (UserId= @UserId)
 END
 GO
-/****** Object:  StoredProcedure [dbo].[SignUp]    Script Date: 07-15-2021 16:25:46 ******/
+/****** Object:  StoredProcedure [dbo].[SignUp]    Script Date: 07-16-2021 16:38:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -357,7 +363,7 @@ BEGIN
 	end
 END
 GO
-/****** Object:  StoredProcedure [dbo].[SubmitQuotation]    Script Date: 07-15-2021 16:25:46 ******/
+/****** Object:  StoredProcedure [dbo].[SubmitQuotation]    Script Date: 07-16-2021 16:38:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -426,7 +432,7 @@ where Quotation.QuotationId = @QuotationId
 Select @QuotationId as Inserted
 END
 GO
-/****** Object:  StoredProcedure [dbo].[UpdateQuotationStatus]    Script Date: 07-15-2021 16:25:46 ******/
+/****** Object:  StoredProcedure [dbo].[UpdateQuotationStatus]    Script Date: 07-16-2021 16:38:31 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
