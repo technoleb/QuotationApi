@@ -34,7 +34,7 @@ namespace QuotationApi.Controllers
 
                 if (userId > 0)
                 {
-                    return Ok(new GenericResponse<dynamic>(StatusCodes.Status200OK.ToString(), true, "User successfully signed up", null));
+                    return Ok(new GenericResponse<dynamic>(StatusCodes.Status200OK.ToString(), true, "User successfully signed up", user));
                 }
                 else
                 {

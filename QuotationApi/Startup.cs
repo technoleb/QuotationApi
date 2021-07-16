@@ -12,6 +12,8 @@ using System.Text;
 using Quotation.IRepository;
 using Quotation.Repository;
 using Quotation.Data;
+using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 namespace QuotationApi
 {
@@ -28,7 +30,11 @@ namespace QuotationApi
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+            //.AddJsonOptions(options => options.JsonSerializerOptions. = ReferenceHandler.Preserve)
+
+
             services.AddCors(options =>
             {
                 options.AddPolicy("corspolicy",
@@ -66,9 +72,11 @@ namespace QuotationApi
 
             /////////** END JWT ** ////  
 
-            services.AddTransient<IDbConnection>(x => new SqlConnection(this.Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddTransient<IDbConnection>(x => new SqlConnection(this.Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<QuotationDataContext>(option =>
+            option.UseSqlServer(this.Configuration.GetConnectionString("DefaultConnection"))
+            .EnableSensitiveDataLogging());
             services.AddTransient<IUserRepository, UserRepository>();
-            services.AddTransient<IDapperConnection, DapperConnection>();
             services.AddTransient<IQuotationRepository, QuotationRepository>();
 
 

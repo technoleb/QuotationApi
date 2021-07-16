@@ -21,3 +21,15 @@ D:\TechnoLeb\QuotationApi\Quotation.Common\obj\Debug\net5.0\Quotation.Common.csp
 D:\TechnoLeb\QuotationApi\Quotation.Common\obj\Debug\net5.0\Quotation.Common.dll
 D:\TechnoLeb\QuotationApi\Quotation.Common\obj\Debug\net5.0\ref\Quotation.Common.dll
 D:\TechnoLeb\QuotationApi\Quotation.Common\obj\Debug\net5.0\Quotation.Common.pdb
+C:\Users\Niren.Patel\Downloads\QuotationApi\QuotationApi\Quotation.Common\bin\Debug\net5.0\Quotation.Common.deps.json
+C:\Users\Niren.Patel\Downloads\QuotationApi\QuotationApi\Quotation.Common\bin\Debug\net5.0\Quotation.Common.dll
+C:\Users\Niren.Patel\Downloads\QuotationApi\QuotationApi\Quotation.Common\bin\Debug\net5.0\ref\Quotation.Common.dll
+C:\Users\Niren.Patel\Downloads\QuotationApi\QuotationApi\Quotation.Common\bin\Debug\net5.0\Quotation.Common.pdb
+C:\Users\Niren.Patel\Downloads\QuotationApi\QuotationApi\Quotation.Common\obj\Debug\net5.0\Quotation.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Niren.Patel\Downloads\QuotationApi\QuotationApi\Quotation.Common\obj\Debug\net5.0\Quotation.Common.AssemblyInfoInputs.cache
+C:\Users\Niren.Patel\Downloads\QuotationApi\QuotationApi\Quotation.Common\obj\Debug\net5.0\Quotation.Common.AssemblyInfo.cs
+C:\Users\Niren.Patel\Downloads\QuotationApi\QuotationApi\Quotation.Common\obj\Debug\net5.0\Quotation.Common.csproj.CoreCompileInputs.cache
+C:\Users\Niren.Patel\Downloads\QuotationApi\QuotationApi\Quotation.Common\obj\Debug\net5.0\Quotation.Common.dll
+C:\Users\Niren.Patel\Downloads\QuotationApi\QuotationApi\Quotation.Common\obj\Debug\net5.0\ref\Quotation.Common.dll
+C:\Users\Niren.Patel\Downloads\QuotationApi\QuotationApi\Quotation.Common\obj\Debug\net5.0\Quotation.Common.pdb
+D:\TechnoLeb\QuotationApi\Quotation.Common\obj\Debug\net5.0\Quotation.Common.csprojAssemblyReference.cache

@@ -10,35 +10,33 @@ namespace Quotation.Repository
 {
     public class UserRepository : IUserRepository
     {
-        private readonly IDapperConnection dapper;
-        public UserRepository(IDapperConnection iDapper)
+
+        private readonly QuotationDataContext _QuotationDataContext = null;
+        public UserRepository(QuotationDataContext quotationDataContext)
         {
-            dapper = iDapper;
+            _QuotationDataContext = quotationDataContext;
         }
 
         public long SignUpUser(User user)
         {
-            SqlParameters sqlParameters = new SqlParameters();
-            sqlParameters.StoreProcedureName = "SignUp";
-            Dictionary<string, dynamic> parameters = new Dictionary<string, dynamic>();
-            parameters.Add("@Name", user.Name);
-            parameters.Add("@EmailAddress", user.EmailAddress);
-            parameters.Add("@Password", user.Password);
-            sqlParameters.Parameters = parameters;
-            var result = dapper.ExecuteQuery<dynamic>(sqlParameters).FirstOrDefault();
-            return Convert.ToInt64(result.Inserted);
+            if (!_QuotationDataContext.User.Any(x => x.EmailAddress == user.EmailAddress))
+            {
+                _QuotationDataContext.Add(user);
+                _QuotationDataContext.SaveChanges();
+                return Convert.ToInt64(user.UserId);
+            }
+            else
+            {
+                return 0;
+            }
         }
 
         public User Authenticate(User user)
         {
-            SqlParameters sqlParameters = new SqlParameters();
-            sqlParameters.StoreProcedureName = "dbo.Authenticate";
-            Dictionary<string, dynamic> parameters = new Dictionary<string, dynamic>();            
-            parameters.Add("@EmailAddress", user.EmailAddress);
-            parameters.Add("@Password", user.Password);
-            sqlParameters.Parameters = parameters;
-            var result = dapper.ExecuteQuery<User>(sqlParameters).FirstOrDefault();
-            return result as User;
+            return _QuotationDataContext
+                .User
+                .FirstOrDefault(x => x.EmailAddress == user.EmailAddress
+                && x.Password == user.Password);
         }
     }
 }

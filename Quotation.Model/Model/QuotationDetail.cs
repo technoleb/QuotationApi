@@ -2,12 +2,16 @@
 
 namespace Quotation.Model.Model
 {
-    public class QuotationDetails
+    public class QuotationDetail
     {
         [Display(Name = "quotationdetailid")]
+        [Key]
         public long QuotationDetailId { get; set; }
         [Display(Name = "quotationid")]
+        [System.ComponentModel.DataAnnotations.Schema.ForeignKey("QuotationId")]
         public long QuotationId { get; set; }
+        //public Quotation Quotation { get; set; }
+        
         [Display(Name = "quotationdescription")]
         public string QuotationDescription { get; set; }
         [Display(Name = "quantity")]

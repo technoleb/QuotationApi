@@ -5,7 +5,7 @@ namespace Quotation.IRepository
 {
     public interface IQuotationRepository
     {
-        List<Quotation.Model.Model.Quotation> SubmitQuotation(Quotation.Model.Model.Quotation quotation);
+        Quotation.Model.Model.Quotation SubmitQuotation(Quotation.Model.Model.Quotation quotation);
         List<Quotation.Model.Model.Quotation> GetQuotation(long quotationId, long userId);
         bool DeleteQuotation(string quotationNumber, long userId);
 

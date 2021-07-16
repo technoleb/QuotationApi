@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Quotation.Model.Model
 {
     public class Quotation
     {
         [Display(Name = "quotationid")]
+        [Key]
         public long QuotationId { get; set; }
         [Display(Name = "quotationdate")]
-        public string QuotationDate { get; set; }
+        public DateTime QuotationDate { get; set; }
         [Display(Name = "quotationnumber")]
         public string QuotationNumber { get; set; }
         [Display(Name = "customername")]
@@ -26,7 +28,7 @@ namespace Quotation.Model.Model
         public long Status { get; set; }
         [Display(Name = "userid")]
         public long UserId { get; set; }
-        [Display(Name = "quotationdetails")]
-        public IEnumerable<QuotationDetails> QuotationDetails { get; set; }
+        [Display(Name = "quotationdetail")]
+        public ICollection<QuotationDetail> QuotationDetail { get; set; }
     }
 }

@@ -31,9 +31,9 @@ namespace QuotationApi.Controllers
 
                 var quotationResonse = quotationRepository.SubmitQuotation(quotation);
 
-                if (quotationResonse != null && quotationResonse.Any())
+                if (quotationResonse != null)
                 {
-                    return Ok(new GenericResponse<Quotation.Model.Model.Quotation>(StatusCodes.Status200OK.ToString(), true, "Quotation submitted successfully", quotationResonse.FirstOrDefault()));
+                    return Ok(new GenericResponse<Quotation.Model.Model.Quotation>(StatusCodes.Status200OK.ToString(), true, "Quotation submitted successfully", quotationResonse));
                 }
                 else
                 {
