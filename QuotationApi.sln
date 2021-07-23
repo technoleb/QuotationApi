@@ -3,19 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuotationApi", "QuotationApi\QuotationApi.csproj", "{54C5DB30-EE8A-4996-9CD4-C6BFD628AE76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuotationApi", "QuotationApi\QuotationApi.csproj", "{54C5DB30-EE8A-4996-9CD4-C6BFD628AE76}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quotation.Common", "Quotation.Common\Quotation.Common.csproj", "{559919B7-A406-42AC-9DCF-886410C3EAE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotation.Common", "Quotation.Common\Quotation.Common.csproj", "{559919B7-A406-42AC-9DCF-886410C3EAE6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quotation.Repository", "Quotation.Repository\Quotation.Repository.csproj", "{5A13BF07-C8AE-4F6C-BD86-6A06B2D63045}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotation.Repository", "Quotation.Repository\Quotation.Repository.csproj", "{5A13BF07-C8AE-4F6C-BD86-6A06B2D63045}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quotation.IRepository", "Quotation.IRepository\Quotation.IRepository.csproj", "{962CD539-F576-4DAE-B6F5-DC8C495C2E22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotation.IRepository", "Quotation.IRepository\Quotation.IRepository.csproj", "{962CD539-F576-4DAE-B6F5-DC8C495C2E22}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quotation.Model", "Quotation.Model\Quotation.Model.csproj", "{9588FF85-2DC0-4AF5-96FB-16081E8C543A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotation.Model", "Quotation.Model\Quotation.Model.csproj", "{9588FF85-2DC0-4AF5-96FB-16081E8C543A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quotation.Data", "Quotation.Data\Quotation.Data.csproj", "{9FE1042E-B742-4677-9BD8-D165B92E302E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotation.Test", "Quotation.Test\Quotation.Test.csproj", "{A74F1B92-0661-4482-9F29-C3C912455CA6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotation.Data", "Quotation.Data\Quotation.Data.csproj", "{9FE1042E-B742-4677-9BD8-D165B92E302E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +45,6 @@ Global
 		{9FE1042E-B742-4677-9BD8-D165B92E302E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FE1042E-B742-4677-9BD8-D165B92E302E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FE1042E-B742-4677-9BD8-D165B92E302E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A74F1B92-0661-4482-9F29-C3C912455CA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A74F1B92-0661-4482-9F29-C3C912455CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A74F1B92-0661-4482-9F29-C3C912455CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A74F1B92-0661-4482-9F29-C3C912455CA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
