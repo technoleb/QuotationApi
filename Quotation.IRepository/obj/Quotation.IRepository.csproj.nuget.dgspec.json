@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\Quotation.IRepository.csproj": {}
+    "E:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\Quotation.IRepository.csproj": {}
   },
   "projects": {
-    "D:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj": {
+    "E:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj",
+        "projectUniqueName": "E:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj",
         "projectName": "Quotation.Common",
-        "projectPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj",
+        "projectPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj",
         "packagesPath": "C:\\Users\\Niren.Patel\\.nuget\\packages\\",
-        "outputPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Common\\obj\\",
+        "outputPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "D:\\TechnoLeb\\QuotationApi\\Quotation.Data\\Quotation.Data.csproj": {
+    "E:\\TechnoLeb\\QuotationApi\\Quotation.Data\\Quotation.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TechnoLeb\\QuotationApi\\Quotation.Data\\Quotation.Data.csproj",
+        "projectUniqueName": "E:\\TechnoLeb\\QuotationApi\\Quotation.Data\\Quotation.Data.csproj",
         "projectName": "Quotation.Data",
-        "projectPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Data\\Quotation.Data.csproj",
+        "projectPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Data\\Quotation.Data.csproj",
         "packagesPath": "C:\\Users\\Niren.Patel\\.nuget\\packages\\",
-        "outputPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Data\\obj\\",
+        "outputPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -90,11 +90,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj": {
-                "projectPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj"
+              "E:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj": {
+                "projectPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj"
               },
-              "D:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj": {
-                "projectPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj"
+              "E:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj": {
+                "projectPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj"
               }
             }
           }
@@ -141,14 +141,14 @@
         }
       }
     },
-    "D:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\Quotation.IRepository.csproj": {
+    "E:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\Quotation.IRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\Quotation.IRepository.csproj",
+        "projectUniqueName": "E:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\Quotation.IRepository.csproj",
         "projectName": "Quotation.IRepository",
-        "projectPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\Quotation.IRepository.csproj",
+        "projectPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\Quotation.IRepository.csproj",
         "packagesPath": "C:\\Users\\Niren.Patel\\.nuget\\packages\\",
-        "outputPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\obj\\",
+        "outputPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -169,14 +169,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj": {
-                "projectPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj"
+              "E:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj": {
+                "projectPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj"
               },
-              "D:\\TechnoLeb\\QuotationApi\\Quotation.Data\\Quotation.Data.csproj": {
-                "projectPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Data\\Quotation.Data.csproj"
+              "E:\\TechnoLeb\\QuotationApi\\Quotation.Data\\Quotation.Data.csproj": {
+                "projectPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Data\\Quotation.Data.csproj"
               },
-              "D:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj": {
-                "projectPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj"
+              "E:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj": {
+                "projectPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj"
               }
             }
           }
@@ -209,14 +209,14 @@
         }
       }
     },
-    "D:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj": {
+    "E:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj",
+        "projectUniqueName": "E:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj",
         "projectName": "Quotation.Model",
-        "projectPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj",
+        "projectPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj",
         "packagesPath": "C:\\Users\\Niren.Patel\\.nuget\\packages\\",
-        "outputPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Model\\obj\\",
+        "outputPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TRQlcV6F7cOiQ51G3rHL3UKMmgX1YfdeQJTiXo8/XxcRJ3Lvn0Eeh7UHGL7fZZnMwh1pajXgIFS3SK+d+3btCg==",
+  "dgSpecHash": "BIE8MEMmpILWLIyX62UNgUvsSZOPPhNNHwOflKj4gwsIkfUrgCnsCzRKRMB1m9BJ4QShOjZ9iJKLdDm64fIiqg==",
   "success": true,
-  "projectFilePath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj",
+  "projectFilePath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

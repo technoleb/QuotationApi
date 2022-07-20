@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj",
+      "projectUniqueName": "E:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj",
       "projectName": "Quotation.Common",
-      "projectPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj",
+      "projectPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj",
       "packagesPath": "C:\\Users\\Niren.Patel\\.nuget\\packages\\",
-      "outputPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Common\\obj\\",
+      "outputPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -5996,11 +5996,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\Quotation.IRepository.csproj",
+      "projectUniqueName": "E:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\Quotation.IRepository.csproj",
       "projectName": "Quotation.IRepository",
-      "projectPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\Quotation.IRepository.csproj",
+      "projectPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\Quotation.IRepository.csproj",
       "packagesPath": "C:\\Users\\Niren.Patel\\.nuget\\packages\\",
-      "outputPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\obj\\",
+      "outputPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.IRepository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6021,14 +6021,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj": {
-              "projectPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj"
+            "E:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj": {
+              "projectPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Common\\Quotation.Common.csproj"
             },
-            "D:\\TechnoLeb\\QuotationApi\\Quotation.Data\\Quotation.Data.csproj": {
-              "projectPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Data\\Quotation.Data.csproj"
+            "E:\\TechnoLeb\\QuotationApi\\Quotation.Data\\Quotation.Data.csproj": {
+              "projectPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Data\\Quotation.Data.csproj"
             },
-            "D:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj": {
-              "projectPath": "D:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj"
+            "E:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj": {
+              "projectPath": "E:\\TechnoLeb\\QuotationApi\\Quotation.Model\\Quotation.Model.csproj"
             }
           }
         }
